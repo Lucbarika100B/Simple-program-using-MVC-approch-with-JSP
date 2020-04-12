@@ -28,7 +28,7 @@ public class ProgramController extends HttpServlet {
 		List <String> courses = model.getCourses(program);
 		
 		// in order to share information among different components of the app, we use attributes
-		// since we are on the request, we set the attribute on the request
+		// since we are on the request, we set the attribute on the request object itself 
 		request.setAttribute("courses", courses);
 		
 		//get model response and send it back to the view
